@@ -1,7 +1,7 @@
 #include <windows.h>
 
 void MyDraw(HWND h) {
-	HDC dc = GetDC(h);//улей и пчелки бзз
+	HDC dc = GetDC(h);
 	HBRUSH black = CreateSolidBrush(RGB(0, 0, 0));
 	HBRUSH yellow = CreateSolidBrush(RGB(255, 237, 0));
 	HBRUSH testbrown = CreateSolidBrush(RGB(198, 171, 120));
@@ -73,7 +73,7 @@ LONG WINAPI WndProc(HWND hwnd, UINT message, WPARAM wparam, LPARAM lparam)
         break;
     default:
         return DefWindowProcA(hwnd, message, wparam, lparam);
-    };
+    }
     return 0;
 };
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow){
